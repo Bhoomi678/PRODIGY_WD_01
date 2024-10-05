@@ -1,0 +1,96 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Section height */
+section 
+{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Navigation Bar Styles */
+.navbar 
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 999;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-list 
+{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.nav-list li 
+{
+  margin: 0 20px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover 
+{
+  color: #ff6347; /* Change color on hover */
+}
+
+/* Change navbar style on scroll */
+.scrolled 
+{
+  background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent on scroll */
+}
+
+/* Background Styles for Sections */
+#home 
+{
+  background: linear-gradient(135deg, #ff6347, #ffcc33); /* Red to Yellow Gradient */
+}
+
+#about 
+{
+  background: linear-gradient(135deg, #34ace0, #33d9b2); /* Light Blue to Green */
+}
+
+#services 
+{
+  background: linear-gradient(135deg, #ff6b81, #ff4757); /* Pink to Red */
+}
+
+#contact 
+{
+  background: linear-gradient(135deg, #3742fa, #7158e2); /* Blue to Purple */
+}
+
+/* Make text responsive */
+@media (max-width: 768px) 
+{
+  section 
+  {
+    font-size: 1.5rem;
+  }
+}
